@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Frozen Frog Cruises</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		  crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+		  crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles/myDestinations.css">
+	<script type="text/javascript" src="scripts/myDest.js"></script>
+<script>
+
+	$(document).ready(function() {
+		insertHeader($(".header"));
+		insertFooter($(".footer"));
+		$("#alertM").hide();
+		$("#form").submit(function(e) {
+			$("#alertM").show();
+			e.preventDefault();
+		});
+		$("#alertMclose").click(function(){
+			$("#alertM").hide();
+		});
+		var alias = getQueryParam("alias");
+		fillDest($("#selectDest"),alias);
+
+		$("#findH").addClass("active");
+	});
+
+</script>
+</head>
+<body>
+<div class="header container-fluid"></div>
+<div class="pageImage"><img src="img/findcruise.jpg"></div>
+<div class="requestQ container-fluid">
+	<form id="form" class="form-horizontal">
+		<div id="destOptions" class="form-group">
+			<select id="selectDest" class="form-control">
+				<option selected value="map">All Destinations</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<input type="date" class="form-control" name="date" id="date" placeholder="Departure date"/>
+		</div>
+		<div class="form-group">
+			<select id="selectShip" class="form-control">
+				<option selected>All Ships</option>
+				<option>Frozen Cloud</option>
+				<option>Frozen Frog Expedition</option>
+				<option>Frozen Discoverer</option>
+				<option>Frozen Explorer</option>
+				<option>Frozen Muse</option>
+			</select>
+		</div>
+
+		<button type="submit" class="btn btn-default">Find your frog</button>
+	</form>
+</div>
+
+	<div id="alertM" class="alert alert-danger alert-dismissable alertMes">
+		<button id="alertMclose" type="button" class="close" data-dismiss="alert"
+			aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<h4 class="alert-heading"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Oops! Non-sufficient funds...</h4>
+		<h5>Prevention:</h5>
+		<dl>
+			<dt>Carrying a higher balance in the checking account</dt>
+			<dd>- that is to always have a "buffer" amount just in case an unexpected check does clear</dd>
+			<dt>Better balancing techniques</dt>
+			<dt>Overdraft protection</dt>
+			<dd>- This may be in the form of a link to a savings account from which funds will be automatically transferred, a credit card, or, a line of credit designed specially for this purpose.</dd>
+			<dt>Using a credit/debit card or cash instead of checks.</dt>
+		</dl>
+		<p class="mb-0">Refer to: 
+		<a href="https://www.thebalance.com/tips-to-help-you-get-hired-fast-2059661">15 Quick Tips to Get Hired Fast</a>
+		</p>
+	</div>
+
+	<div class="footer container-fluid"></div>
+
+</body>
+</html>

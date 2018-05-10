@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Frozen Frog About</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		  crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+		  crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles/myDestinations.css">
+	<script type="text/javascript" src="scripts/myDest.js"></script>
+<script>
+	$(document).ready(function() {
+		insertHeader($(".header"));
+		insertFooter($(".footer"));
+		keywordPanel($(".kaboutus"),2, "vmin");
+
+		$("#aboutH").addClass("active");
+	});
+</script>
+</head>
+<body>
+	<div class="header container-fluid"></div>
+	<div class="aboutus">
+		<div class="wordsaboutus">
+			<div class="kaboutus"><img src="img/map.png"></div>
+			<div class="paboutus">
+				<p data-animation="animated bounceInUp">When you think about hardy arctic creatures bracing for a cold winter, you’re probably thinking of something huge and furry and possibly antlered. Odds are you’re not thinking of … wood frogs.</p>
+				<p data-animation="animated bounceInUp">How Arctic Frogs Survive Being Frozen Alive</p>
+			</div>
+		</div>
+		<div class="imgaboutus">
+			<img src="img/aboutus.jpg">
+		</div>
+	</div>
+	<div class="footer container-fluid"></div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1255">
+<title>Frozen Frog Contact Us</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		  crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+		  crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles/myDestinations.css">
+	<script type="text/javascript" src="scripts/myDest.js"></script>
+<script>
+	$(document).ready(function() {
+		insertHeader($(".header"));
+		insertFooter($(".footer"));
+		$("#alertM").hide();
+		$("#form").submit(function(e) {
+			$("#alertM").show();
+			e.preventDefault();
+		});
+		$("#alertMclose").click(function(){
+			$("#alertM").hide();
+		});
+		$("#contactH").addClass("active");
+	});
+</script>
+</head>
+<body>
+
+	<div class="header container-fluid"></div>
+	<div class="pageImage"><img src="img/contactus.jpg"></div>
+	<div class="contactus container-fluid">
+		<form id="form" class="form-vertical">
+			<div class="col-md-12">
+				<div class=" form-group col-lg-4">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				<input id="name"class="form-control" type="text" name="name" spellcheck="false" placeholder="Name"/>
+			</div>
+				</div>
+				<div class=" form-group col-lg-4">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+				<input type="tel"class="form-control" name="phone" id="phone" placeholder="Phone number"/>
+			</div>
+				</div>
+				<div class=" form-group col-lg-4">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+				<input type="email"class="form-control" name="emain" id="emain" spellcheck="false" placeholder="@mail"/>
+			</div>
+				</div>
+				<div class=" form-group col-lg-12">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+				<textarea class="form-control" name="details" id="details" placeholder="Message content"></textarea>
+			</div>
+				</div>
+			<div class="form-group col-lg-12">
+				<div class="col-sm-offset-2 col-sm-10">
+					<div class="checkbox">
+						<label> <input type="checkbox"> Yes! I would like to receive emails with news and special offers from Frozen Frog.
+						</label>
+					</div>
+				</div>
+			</div>
+				<div class="form-group col-lg-6">
+			<button type="submit" class="btn btn-default">Send</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div id="alertM" class="alert alert-success alert-dismissable alertMes">
+		<button id="alertMclose" type="button" class="close" data-dismiss="alert"
+			aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<h4 class="alert-heading"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Thank you for getting in touch!</h4>
+		<p>We appreciate you contacting us. We try
+			to respond as soon as possible, so one of our Customer Service
+			colleagues will get back to you within a few hours. Have a great day
+			ahead!</p>
+		<p class="mb-0">
+			See more at: <a href="myDestinations.html">Frozen Frog</a>
+		</p>
+	</div>
+
+	<div class="footer container-fluid"></div>
+
+</body>
+</html>

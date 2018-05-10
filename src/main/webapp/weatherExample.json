@@ -1,0 +1,14 @@
+{
+"coord":{"lon":-157.4,"lat":70.47},
+"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],
+"base":"stations",
+"main":{"temp":250.15,"pressure":1021,"humidity":92,"temp_min":250.15,"temp_max":266.15},
+"visibility":16093,
+"wind":{"speed":9.8,"deg":220},
+"clouds":{"all":20},
+"dt":1483448160,
+"sys":{"type":1,"id":24,"message":0.0054,"country":"US","sunrise":-7739970437,"sunset":-7739970437},
+"id":5879756,
+"name":"Atqasuk",
+"cod":200
+}

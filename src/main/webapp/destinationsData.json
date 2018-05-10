@@ -1,0 +1,138 @@
+[
+  {
+    "name": "Iceland",
+    "alias":"iceland",
+    "image": "iceland.jpg",
+    "map": "",
+    "lat": "65.8",
+    "lon": "-20.3",
+    "gallery":["iceland1.jpg","iceland2.jpg","iceland3.jpg","iceland4.jpg","iceland5.jpg","iceland6.jpg","icelandmap.jpg"]
+  },
+  {
+    "name": "Canada",
+    "alias":"canada",
+    "image": "canada.jpg",
+    "map": "",
+    "lat": "78.4",
+    "lon": "-83.7",
+    "gallery":["canada1.jpg","canada2.jpg","canada3.jpg","canada4.jpg","canada5.jpg","canada6.jpg","canadamap.jpg"]
+  },
+  {
+    "name": "Kamchatka",
+    "alias":"kamchatka",
+    "image": "kamchatka.jpg",
+    "map": "",
+    "lat": "56.13",
+    "lon": "159.53",
+    "gallery":["kamchatka1.jpg","kamchatka2.jpg","kamchatka3.jpg","kamchatka4.jpg","kamchatka5.jpg","kamchatka6.jpg","kamchatka7.jpg","kamchatka8.jpg","kamchatka9.jpg","kamchatkamap.jpg"]
+  },
+  {
+    "name": "Antarctica",
+    "alias":"antarctica",
+    "image": "antarctica.jpg",
+    "map": "",
+    "lat": "-78.9",
+    "lon": "-82.8",
+    "gallery":["antarctica1.jpg","antarctica2.jpg","antarctica3.jpg","antarctica4.jpg","antarctica5.jpg","antarcticamap.jpg"]
+  },
+  {
+    "name": "Finland",
+    "alias":"finland",
+    "image": "finland.jpg",
+    "map": "",
+    "lat": "69.3",
+    "lon": "26.8",
+    "gallery":["finland1.jpg","finland2.jpg","finland3.jpg","finland4.jpg","finlandmap.jpg"]
+  },
+  {
+    "name": "Norway",
+    "alias":"norway",
+    "image": "norway.jpg",
+    "map": "",
+    "lat": "70",
+    "lon": "24",
+    "gallery":["norway1.jpg","norway2.jpg","norway3.jpg","norway4.jpg","norwaymap.jpg"]
+  },
+  {
+    "name": "Siberia",
+    "alias":"siberia",
+    "image": "siberia.jpg",
+    "map": "",
+    "lat": "70.9",
+    "lon": "142.6",
+    "gallery":["siberia4.jpg","siberia1.jpg","siberia2.jpg","siberia3.jpg","siberia5.jpg","siberia6.jpg","siberia7.jpg","siberia8.jpg","siberiamap.jpg"]
+  },
+  {
+    "name": "Sweden",
+    "alias":"sweden",
+    "image": "sweden.jpg",
+    "map": "",
+    "lat": "67.4",
+    "lon": "18.8",
+    "gallery":["sweden1.jpg","sweden2.jpg","sweden3.jpg","sweden4.jpg","sweden5.jpg","sweden6.jpg","swedenmap.jpg"]
+  },
+  {
+    "name": "Greenland",
+    "alias":"greenland",
+    "image": "greenland.jpg",
+    "map": "",
+    "lat": "71.7",
+    "lon": "42.6",
+    "gallery":["greenland5.jpg","greenland1.jpg","greenland2.jpg","greenland3.jpg","greenland4.jpg","greenland6.jpg","greenland7.jpg","greenlandmap.jpg"]
+  },
+  {
+    "name": "Helgoland",
+    "alias":"helgoland",
+    "image": "helgoland.jpg",
+    "map": "",
+    "lat": "54.18",
+    "lon": "7.88",
+    "gallery":["helgoland1.jpg","helgoland2.jpg","helgoland3.jpg","helgoland4.jpg","helgolandmap.jpg"]
+  },
+
+  {
+    "name": "Novaya Zemlya",
+    "alias":"novaya",
+    "image": "novaya.jpg",
+    "map": "",
+    "lat": "73.39",
+    "lon": "57.43",
+    "gallery":["novaya1.jpg","novaya2.jpg","novaya3.jpg","novaya4.jpg","novayamap.jpg"]
+  },
+  {
+    "name": "Alaska",
+    "alias":"alaska",
+    "image": "alaska.jpg",
+    "map": "",
+    "lat": "69.7",
+    "lon": "-156.4",
+    "gallery":["alaska3.jpg","alaska1.jpg","alaska2.jpg","alaska4.jpg","alaska5.jpg","alaska6.jpg","alaskamap.jpg"]
+  },
+  {
+    "name": "Svalbard",
+    "alias":"svalbard",
+    "image": "svalbard.jpg",
+    "map": "",
+    "lat": "79.35",
+    "lon": "12.36",
+    "gallery":["svalbard1.jpg","svalbard2.jpg","svalbard3.jpg","svalbard4.jpg","svalbardmap.jpg"]
+  },
+  {
+    "name": "Kolyma",
+    "alias":"gulag",
+    "image": "gulag.jpg",
+    "map": "",
+    "lat": "63.40",
+    "lon": "156.79",
+    "gallery":["gulag1.jpg","gulag2.jpg","gulag3.jpg","gulagmap.jpg"]
+  },
+  {
+    "name": "South Georgia Island",
+    "alias":"georgia",
+    "image": "georgia_island.jpg",
+    "map": "",
+    "lat": "-54.5",
+    "lon": "-36.5",
+    "gallery":["georgia1.jpg","georgia2.jpg","georgia3.jpg","georgiamap.jpg"]
+  }
+]

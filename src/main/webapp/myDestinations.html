@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="windows-1255">
+    <title>Frozen Frog Home</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="icon" type="image/gif" href="snowsm.gif"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/myDestinations.css">
+    <script type="text/javascript" src="scripts/myDest.js"></script>
+    <script type="text/javascript">
+
+	var dataArray = new Array();
+	var dataGalleryArray = new Array();
+	
+
+	$(document).ready(function() {
+		startHomePage();
+		insertHeader($(".header"));
+		insertFooter($(".footer"));
+		$(".carousel").carousel(
+			    {interval: false}
+			);
+		$(".carousel").hide();
+		$("#closeGalery").hide();
+        $("#closeGaleryBtn").click(function(){
+            $(".carousel").hide();
+            $(".nextInd").remove();
+            $(".nextImg").remove();
+            $("#closeGalery").hide();
+            $( ".destinations" ).fadeTo( 'fast', '1');
+        });
+
+        $("#homeH").addClass("active");
+	});
+
+
+    </script>
+
+</head>
+<body>
+<div class="distMain">
+    <div class="header container-fluid"></div>
+    <div class="destDescription">
+        <h3>THE FROG CREATED KIND AND FREEZE TOLERANCE
+        </h3>
+        <p>When you think about hardy arctic creatures bracing for a cold winter, you’re probably thinking of something
+            huge and furry and possibly antlered. Odds are you’re not thinking of … wood frogs. </p>
+        <small class="hidden-sm hidden-xs">But it may be time to cast that amphibian prejudice aside in light of a new study in The Journal of
+            Experimental Biology that examines the astounding ability of Rana sylvatica to freeze—and live through it.
+            R. sylvatica is a species of wood frog with a range that stretches from the state of Georgia all the way
+            through Canada and into the Arctic Circle.
+        </small><br/>
+        <small>
+            Beyond being fascinating science, the ability to freeze and unfreeze living organs and tissues without
+            damaging them has potentially profound implications for areas such as organ transplantation.
+            “There’s an obvious parallel between what these frogs are doing to preserve all of their tissues
+            simultaneously and our need to be able to cryopreserve human organs for tissue-matching purposes,” said
+            Costanzo, noting that attempts to successfully freeze human organs for transplants have so far proved
+            unsuccessful, perhaps due to their relative size and cellular complexity.
+            “If you could freeze human organs even for a short period of time, that would be a major breakthrough
+            because then these organs could be shipped around the world, which would greatly [improve] the
+            donor-matching process,” noted Costanzo.
+        </small>
+        <h5><span class='glyphicon glyphicon-heart text-primary'></span> And that, ironically, is a heartwarming thought
+            <span class='glyphicon glyphicon-heart text-primary'></span></h5>
+    </div>
+
+    <div class="destinations container-fluid">
+    </div>
+
+
+    <div id="closeGalery" class="closeGalery">
+        <button id="closeGaleryBtn" type="button" class="close" data-dismiss="modal"><span
+                aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="carousel slide" data-ride="carousel" id="carouselInd">
+
+        <ol id="galeryInd" class="carousel-indicators">
+
+            <li id="firstInd" data-slide-to="0" data-target="#carouselInd"></li>
+        </ol>
+        <div id="galerySlide" class="carousel-inner  cont-slider" role="listbox">
+            <div id="firstImg" class="item"><img class="d-block img-fluid" src="img/alaska.jpg"></div>
+        </div>
+
+        <a class="left carousel-control" href="#carouselInd" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carouselInd" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div id="carouselButtons" class="destCarouseRef text-center">
+            <a id="reserveButton" href="">
+                <span>CHECKOUT THIS TRIP</span>
+            </a>
+        </div>
+    </div>
+    <div id="mainRequest" class="mainRequest">
+        <a href="myDestRequest.html" class="" id="findTrip"><strong>REQUEST A FROG NOW <span
+                class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></strong></a><br/>
+        <span><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +55 53 9964 1863</span>
+    </div>
+
+    <div class="footer container-fluid"></div>
+</div>
+</body>
+</html>
